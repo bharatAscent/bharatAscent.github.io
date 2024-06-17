@@ -93,11 +93,19 @@ button:focus {
   outline: none;
 }
 
-.toggle {
+.hamburger {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 20px;
   left: 20px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  margin: 7px auto;  
 }
 
 .cta-btn {
