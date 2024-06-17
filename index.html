@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="login-page">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>A11y Project</title>
+    </head>
+    <body>
+        <header><h1>Login</h1></header>
+        <main class="container">
+            <form action="/home.html" id="form" class="form">
+                <div class="form-control">
+                    <label for="username"> Username </label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="username"
+                        aria-required="true"
+                        aria-describedby="usernameAlert"
+                    />
+                    <small
+                        role="alert"
+                        aria-atomic="true"
+                        id="usernameAlert"
+                        className="form__alert"
+                    >
+                        You must enter a username
+                    </small>
+                </div>
+                <div class="form-control">
+                    <label for="password"> Password </label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        aria-required="true"
+                        aria-describedby="passwordAlert"
+                    />
+                    <small
+                        aria-live="polite"
+                        role="alert"
+                        aria-atomic="true"
+                        id="passwordAlert"
+                        className="form__alert"
+                    >
+                        You must enter a password
+                    </small>
+                </div>
+                <button type="submit" class="form__submit">Submit</button>
+            </form>
+        </main>
+        <script src="form.js"></script>
+
+    </body>
+</html>
